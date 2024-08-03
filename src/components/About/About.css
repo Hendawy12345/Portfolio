@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+.left_side ,.right_side{
+    width: 50%;
+    flex-wrap: wrap;
+}
+.left_side img{
+    width: 100%;
+}
+@media only screen and (max-width: 1000px){
+    .parent{
+        display: block;
+        width:100%;
+        padding: 20px;
+    }
+    .left_side,.right_side{
+        width:100%;
+    }
+    .left_side{
+       margin-left: 25%;
+    }
+}
